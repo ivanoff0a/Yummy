@@ -1,10 +1,43 @@
 section.section.-section-main
-	include header.pug
-	.container
-		.row.flex-row.section__content
-			.panel__container
-				h1.panel__text Сладкие воздушные букеты из маршмэллоу и мармеладок
-				button.panel__btn Купить букет
-			.img__container
-				img.img__bunch(src="./assets/img/card_bouquet5.png")
-			img.img__raindrop(src="./assets/img/1440_1.png")
+  include header.pug
+  .container
+    .row.section__content
+      .col-md-6.panel__container
+        h1.panel__text Сладкие воздушные букеты из маршмэллоу и мармеладок
+        button.panel__btn(type='button', data-toggle='modal', data-target='#exampleModalCenter') Купить букет
+      .col-md-6.img__container
+        img.img__bunch(src="./assets/img/card_bouquet5.png")
+      img.img__raindrop(src="./assets/img/1440_1.png")
+
+section.section.-section-features
+  .container
+    .row.section__content
+      .col-md-3.features__item
+        .features__img__container
+          img.features__img(src="./assets/img/feature-time.png")
+        p.features___text Срок хранения до 6 месяцев
+      .col-md-3.features__item
+        .features__img__container
+          img.features__img(src="./assets/img/feature-components.png")
+        p.features___text Натуральные компоненты  
+      .col-md-3.features__item
+        .features__img__container
+          img.features__img(src="./assets/img/feature-delivery.png")
+        p.features___text Бесплатная доставка 
+      .col-md-3.features__item
+        .features__img__container
+          img.features__img(src="./assets/img/feature-shape.png")
+        p.features___text Низкая калорийность
+
+#exampleModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered(role='document')
+    .modal-content
+      .modal-header
+        h5#exampleModalLongTitle.modal-title Modal title
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        | ...
+      .modal-footer
+        button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+        button.btn.btn-primary(type='button') Save changes

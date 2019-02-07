@@ -1,6 +1,11 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import './variables';
+@import './fonts';
 @import './components/section';
 @import './components/navbar';
+@import './components/features';
 @import './components/panel';
-@import './fonts';
+
+img {
+	max-width: 100%;
+}

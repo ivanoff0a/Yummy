@@ -1,18 +1,24 @@
 .section {
-	min-height: 80vh;
+	position: relative;
+	
+	&.-section-features {
+		display: flex;
+		align-items: center;
+		min-height: 45vh;
+	}
 
 	&.-section-main {
+		min-height: 80vh;
 		position: relative;
-		background: linear-gradient(60deg, $blue, $pink);
+		background: linear-gradient(60deg, $blue, $blue, $pink, $pink);
 		border-radius: $border-radius;
 		margin: 30px;
+		display: flex;
+		align-items: center;
 	}	
 }
 
-.img__raindrop {
-	background-color: $white;
-	position: absolute;
-	bottom: -106px;
-	left: 0;
-
-} 
+.section__content {
+	display: flex;
+	align-items: center;
+}
