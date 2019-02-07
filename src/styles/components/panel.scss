@@ -1,0 +1,25 @@
+@import './fonts';
+
+.panel__text {
+	font-family: "comfortaa-b";
+	color: $white;
+}
+
+.panel__btn {
+	font-family: "comfortaa-b";
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: $blue-btn;
+	border: none;
+	color: $white;
+	outline: 0 none !important;
+	border-radius: $border-radius2x;
+	box-shadow: 0 3px 0 #0d41fb;
+	transition: .3s;
+}
+
+.panel__btn:active {
+	box-shadow: none;
+}

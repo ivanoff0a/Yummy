@@ -1,0 +1,33 @@
+.navbar { 
+padding: 20px 0; 
+
+	&__logo { 
+		img { 
+			height: 45px;
+		} 
+	} 
+
+	&__links { 
+		a { 
+			color: $white !important; 
+			opacity: .5; 
+			transition: .2s; 
+			margin: 0 15px; 
+			cursor: pointer;
+			font-size: 18px; 
+				&:hover { 
+				opacity: 1; 
+				} 
+		} 
+	} 
+
+	&__phone { 
+		font-size: 19px; 
+		color: $white;
+			&:hover { 
+				opacity: 1;
+				color: $white; 
+				text-decoration: none;
+			}		 
+	} 
+}

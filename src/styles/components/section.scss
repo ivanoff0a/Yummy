@@ -1,0 +1,18 @@
+.section {
+	min-height: 80vh;
+
+	&.-section-main {
+		position: relative;
+		background: linear-gradient(60deg, $blue, $pink);
+		border-radius: $border-radius;
+		margin: 30px;
+	}	
+}
+
+.img__raindrop {
+	background-color: $white;
+	position: absolute;
+	bottom: -106px;
+	left: 0;
+
+} 
