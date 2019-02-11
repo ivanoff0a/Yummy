@@ -1,0 +1,43 @@
+-
+	var rows = [
+		[
+			{
+				pic: "./assets/img/card_bouquet2.png",
+				customClass: '-palegreen',
+				size: 'col-md-6'
+			},
+			{
+				pic: "./assets/img/card_bouquet6.png",
+				customClass: '-blue',
+				size: 'col-md-6'
+			}			
+		],
+		[
+			{
+				pic: "./assets/img/card_bouquet1.png",
+				customClass: '-palepink',
+				size: 'col-md-4'
+			},
+			{
+				pic: "./assets/img/card_bouquet7.png",
+				customClass: '-palepink',
+				size: 'col-md-4'
+			},
+			{
+				pic: "./assets/img/card_bouquet8.png",
+				customClass: '-palepink',
+				size: 'col-md-4'
+			}
+		]
+	]
+
+
+section.section.-section-catalogue
+	.container
+		h1.catalogue-title Наша продукция
+		for row in rows
+			.row.section__content
+				for item in row
+					div(class= item.size)
+						.catalogue__item(class= item.customClass)
+							img.catalogue__img(src= item.pic)

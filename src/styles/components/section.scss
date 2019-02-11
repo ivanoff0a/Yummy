@@ -4,11 +4,15 @@
 	&.-section-features {
 		display: flex;
 		align-items: center;
-		min-height: 45vh;
+		min-height: 50vh;
+	}
+
+	&.-section-catalogue {
+		height: 85vh;
 	}
 
 	&.-section-main {
-		min-height: 80vh;
+		min-height: 85vh;
 		position: relative;
 		background: linear-gradient(60deg, $blue, $blue, $pink, $pink);
 		border-radius: $border-radius;
@@ -19,6 +23,7 @@
 }
 
 .section__content {
+	margin-top: 30px;
 	display: flex;
 	align-items: center;
 }

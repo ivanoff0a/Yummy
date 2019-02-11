@@ -1,0 +1,33 @@
+.catalogue-title {
+	font-family: "frankfurter-r";
+	text-align: center;
+  font-size: 50px;
+  background: linear-gradient(60deg, $blue, $pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $blue;
+  display: table;
+  margin: 20px auto;	
+}
+
+.catalogue__item {
+	transition: 3s;
+	height: auto;
+	border-radius: $border-radius;
+		&.-palegreen {
+			background-color: $palegreen;
+		}
+		
+		&.-palepink {
+			background-color: $palepink;
+		}
+		
+		&.-blue {
+			background-color: lighten($blue, 10%);
+		}					
+}
+
+.catalogue__item:hover {
+
+}
+
