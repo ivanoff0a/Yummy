@@ -1,3 +1,3 @@
-require('jquery')
-require('popper.js')
+require('jquery'),
+require('popper.js'),
 require('bootstrap');
