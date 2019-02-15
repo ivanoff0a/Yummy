@@ -12,7 +12,8 @@
 		} 
 
 		&__links { 
-			a { 
+			a {
+				font-family: "comfortaa-r"; 
 				color: $white !important; 
 				opacity: .5; 
 				transition: .2s; 
@@ -25,7 +26,8 @@
 			} 
 		} 
 
-		&__phone { 
+		&__phone {
+			font-family: "comfortaa-r"; 
 			font-size: 19px; 
 			color: $white;
 				&:hover { 

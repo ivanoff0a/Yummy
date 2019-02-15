@@ -10,9 +10,11 @@
   margin: 20px auto;	
 }
 
+
 .catalogue__item {
 	transition: 3s;
-	height: auto;
+	height: 365px;
+	overflow: hidden !important;
 	border-radius: $border-radius;
 		&.-palegreen {
 			background-color: $palegreen;
@@ -45,23 +47,24 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 366px;
-	transition: 1s;
+	transition: 0.9s;
+	height: 365px;
 	padding: 30px;
 	z-index: 100;
+	z-index: 6;
+	transform: translateX(-100%); 
 	border-radius: $border-radius;
-	transform: translate(-100%, -1%);	
 		&.-whitebg{
-			background-color: $white;
-			opacity: 0.8;
-		}				
+			background-color: rgba(255,255,255, 0.8);
+		}
 }
 
-.catalogue__item:hover + .catalogue__info {
-	transform: translate(0, -100%);	
+.catalogue__item:hover .catalogue__info {
+	transform: translatey(-100%);
 }
 
 .catalogue__btn {
+	cursor: pointer;
 	margin-top: 20px;
 	font-family: "comfortaa-r";
 	padding-left: 10px;

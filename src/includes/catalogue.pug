@@ -5,14 +5,12 @@
 				pic: "./assets/img/card_bouquet2.png",
 				customClass: '-palegreen',
 				size: 'col-md-6',
-				bgColor: '-whitebg',
 				name: 'Гармоника'
 			},
 			{
 				pic: "./assets/img/card_bouquet6.png",
 				customClass: '-blue',
 				size: 'col-md-6',
-				bgColor: '-whitebg',
 				name: 'Гармоника'
 			}			
 		],
@@ -20,25 +18,36 @@
 			{
 				pic: "./assets/img/card_bouquet1.png",
 				customClass: '-palepink',
-				size: 'col-md-4',
-				bgColor: '-whitebg',
+				size: 'col-md-6',
 				name: 'Гармоника'
 			},
 			{
 				pic: "./assets/img/card_bouquet7.png",
 				customClass: '-palepink',
-				size: 'col-md-4',
-				bgColor: '-whitebg',
-				name: 'Гармоника'
-			},
-			{
-				pic: "./assets/img/card_bouquet8.png",
-				customClass: '-palepink',
-				size: 'col-md-4',
-				bgColor: '-whitebg',
+				size: 'col-md-6',
 				name: 'Гармоника'
 			}
 		]
+		// [
+		// 	{
+		// 		pic: "./assets/img/card_bouquet1.png",
+		// 		customClass: '-palepink',
+		// 		size: 'col-md-4',
+		// 		name: 'Гармоника'
+		// 	},
+		// 	{
+		// 		pic: "./assets/img/card_bouquet7.png",
+		// 		customClass: '-palepink',
+		// 		size: 'col-md-4',
+		// 		name: 'Гармоника'
+		// 	},
+		// 	{
+		// 		pic: "./assets/img/card_bouquet8.png",
+		// 		customClass: '-palepink',
+		// 		size: 'col-md-4',
+		// 		name: 'Гармоника'
+		// 	}
+		// ]		
 	]
 
 
@@ -51,8 +60,8 @@ section.section.-section-catalogue
 					div(class= item.size)
 						.catalogue__item(class= item.customClass)
 							img.catalogue__img(src= item.pic)
-						.catalogue__info(class= item.bgColor)
-							h2.catalogue__name Букет Гармоника
-							p.catalogue__size Размер: средний(Диаметр - 27 см).
-							p.catalogue__weight Масса: 500 гр. Размеры указаны стандартные, мы можем собрать букет исходя из ваших пожеланий
-							button.catalogue__btn Заказать за 2000
+							.catalogue__info.-whitebg
+								h2.catalogue__name Букет Гармоника
+								p.catalogue__size Размер: средний(Диаметр - 27 см).
+								p.catalogue__weight Масса: 500 гр. Размеры указаны стандартные, мы можем собрать букет исходя из ваших пожеланий
+								button.catalogue__btn Заказать за 2000
