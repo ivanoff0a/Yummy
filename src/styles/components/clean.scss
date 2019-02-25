@@ -1,0 +1,26 @@
+.text__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.clean__container {
+  background: url('../img/clean-bg.png');
+  background-repeat: no-repeat;
+  height: 600px;
+  background-size: cover ;
+}
+
+.text__container h1 {
+  font-family: "frankfurter-r";
+  color: $white;
+  font-size: 42px;
+  text-align: center;
+}
+
+.text__container p {
+  font-family: "comfortaa-b";
+  color: $white;
+  font-size: 20px;
+  text-align: center;
+}

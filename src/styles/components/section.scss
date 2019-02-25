@@ -8,8 +8,8 @@
 	}
 
 	&.-section-catalogue {
-		height: 85vh;
-		margin-bottom: 100px;
+		height: 90vh;
+		margin-bottom: 200px;
 	}
 
 	&.-section-main {
@@ -20,11 +20,19 @@
 		margin: 30px;
 		display: flex;
 		align-items: center;
-	}	
+	}
+	&.-section-clean {
+		position: relative;
+		margin: 30px;
+		height: 700px;
+		background: linear-gradient(180deg, $purple, $purple, $purple, $lightblue);
+		border-radius: $border-radius;
+	}
 }
 
 .section__content {
 	margin-top: 30px;
 	display: flex;
 	align-items: center;
+	height: 100%;
 }

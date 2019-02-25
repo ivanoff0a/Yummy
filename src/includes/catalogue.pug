@@ -47,7 +47,7 @@
 		// 		size: 'col-md-4',
 		// 		name: 'Гармоника'
 		// 	}
-		// ]		
+		// ]
 	]
 
 
@@ -59,9 +59,11 @@ section.section.-section-catalogue
 				for item in row
 					div(class= item.size)
 						.catalogue__item(class= item.customClass)
-							img.catalogue__img(src= item.pic)
-							.catalogue__info.-whitebg
-								h2.catalogue__name Букет Гармоника
-								p.catalogue__size Размер: средний(Диаметр - 27 см).
-								p.catalogue__weight Масса: 500 гр. Размеры указаны стандартные, мы можем собрать букет исходя из ваших пожеланий
-								button.catalogue__btn Заказать за 2000
+							.-whitebg
+								img_container
+									img.catalogue__img(src= item.pic)
+								.catalogue__info
+									h2.catalogue__name Букет Гармоника
+									p.catalogue__size Размер: средний(Диаметр - 27 см).
+									p.catalogue__weight Масса: 500 гр. Размеры указаны стандартные, мы можем собрать букет исходя из ваших пожеланий
+									button.catalogue__btn Заказать за 2000
